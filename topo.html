@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Copel</title>
+    <link rel="stylesheet" href="https://www.copel.com/site/wp-content/uploads/elementor/css/post-18014.css?ver=1646333925">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#EC6500',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+
+    <header class="bg-primary px-12 py-4 flex gap-4 items-center justify-between">
+        <div class="logo w-[5.8rem]">
+            <a href="/"><img class="w-[5.8rem]" src="https://www.copel.com/site/wp-content/uploads/2021/12/logo-copel-branco.png"/></a>
+        </div>
+       <ul class="menu w-4/6 flex gap-4 items-center justify-evenly text-white">
+           <li class="comFilho">
+               <a href="/">O que você procura?</a>
+                <ul class="hidden absolute flex flex-col gap-2">
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                    <li>Lorem</li>
+                </ul>
+            </li>
+            <li>
+                <a href="/">Institucional</a>
+            </li>
+            <li>
+                <a href="/">Grupo Copel</a>
+            </li>
+            <li>
+                <a href="/">Investidores</a>
+            </li>
+            <li>
+                <a href="/">Notícias</a>
+            </li>
+            <li>
+                <a href="/">Atendimento</a>
+            </li>
+       </ul>
+
+       <a href="/" class="flex items-center justify-center px-4 py-2 bg-white rounded text-primary">Fatura Digital</a>
+
+       <div class="search flex items-center justify-center p-2 bg-[rgba(0,0,0,.1)] rounded hover:cursor-pointer">
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path class="fill-white" id="search" d="M19.862,18.316,15.12,13.574a.464.464,0,0,0-.332-.137h-.516a8.123,8.123,0,1,0-.836.836v.516a.48.48,0,0,0,.137.332l4.742,4.742a.469.469,0,0,0,.664,0l.883-.883A.469.469,0,0,0,19.862,18.316ZM8.125,14.374a6.25,6.25,0,1,1,6.25-6.25A6.248,6.248,0,0,1,8.125,14.374Z" fill="#ff750c"/>
+            </svg>
+       </div>
+
+    </header>
+    
+    <style>
+        .comFilho:hover > ul{ display: flex; }
+    </style>
+
+
+</body>
+</html>
