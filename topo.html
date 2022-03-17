@@ -1,71 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Copel</title>
-    <link rel="stylesheet" href="https://www.copel.com/site/wp-content/uploads/elementor/css/post-18014.css?ver=1646333925">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary: '#EC6500',
-              }
-            }
-          }
-        }
-    </script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Header Copel</title>
+	<link rel="stylesheet"
+		href="https://www.copel.com/site/wp-content/uploads/elementor/css/post-18014.css?ver=1646333925">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: '#EC6500',
+						colorMenu: "#494c4f",
+					}
+				}
+			}
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+		integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+	<style>
+		@font-face {
+			font-family: Quenda;
+			src: url("https://www.meusiteteste.com.br/copel/wp-content/uploads/2021/11/Quenda-Medium.ttf");
+		}
+
+		@font-face {
+			font-family: Univers;
+			src: url("/fonts/Univers-LT-55-Roman.ttf");
+		}
+
+		body,
+		body :is(input, select, textarea) {
+			font-family: Univers, sans-serif;
+		}
+
+		body :is(h1, h2, h3, h4, h5) {
+			font-family: Quenda, sans-serif;
+		}
+	</style>
 </head>
+
 <body>
 
-    <header class="bg-primary px-12 py-4 flex gap-4 items-center justify-between">
-        <div class="logo w-[5.8rem]">
-            <a href="/"><img class="w-[5.8rem]" src="https://www.copel.com/site/wp-content/uploads/2021/12/logo-copel-branco.png"/></a>
-        </div>
-       <ul class="menu w-4/6 flex gap-4 items-center justify-evenly text-white">
-           <li class="comFilho">
-               <a href="/">O que você procura?</a>
-                <ul class="hidden absolute flex flex-col gap-2">
-                    <li>Lorem</li>
-                    <li>Lorem</li>
-                    <li>Lorem</li>
-                    <li>Lorem</li>
-                </ul>
-            </li>
-            <li>
-                <a href="/">Institucional</a>
-            </li>
-            <li>
-                <a href="/">Grupo Copel</a>
-            </li>
-            <li>
-                <a href="/">Investidores</a>
-            </li>
-            <li>
-                <a href="/">Notícias</a>
-            </li>
-            <li>
-                <a href="/">Atendimento</a>
-            </li>
-       </ul>
+	<header class="bg-primary p-4 md:px-12 md:py-4 flex gap-4 items-center justify-between">
+		<div class="logo w-[5.8rem]">
+			<a href="/"><img class="w-[5.8rem]"
+					src="https://www.copel.com/site/wp-content/uploads/2021/12/logo-copel-branco.png" /></a>
+		</div>
 
-       <a href="/" class="flex items-center justify-center px-4 py-2 bg-white rounded text-primary">Fatura Digital</a>
+		<svg class="iconMenu md:hidden" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+			fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+			class="feather feather-menu">
+			<line x1="3" y1="12" x2="21" y2="12"></line>
+			<line x1="3" y1="6" x2="21" y2="6"></line>
+			<line x1="3" y1="18" x2="21" y2="18"></line>
+		</svg>
 
-       <div class="search flex items-center justify-center p-2 bg-[rgba(0,0,0,.1)] rounded hover:cursor-pointer">
-            <svg class="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                <path class="fill-white" id="search" d="M19.862,18.316,15.12,13.574a.464.464,0,0,0-.332-.137h-.516a8.123,8.123,0,1,0-.836.836v.516a.48.48,0,0,0,.137.332l4.742,4.742a.469.469,0,0,0,.664,0l.883-.883A.469.469,0,0,0,19.862,18.316ZM8.125,14.374a6.25,6.25,0,1,1,6.25-6.25A6.248,6.248,0,0,1,8.125,14.374Z" fill="#ff750c"/>
-            </svg>
-       </div>
+		<ul
+			class="menu w-screen top-[5rem] bg-white p-8 text-colorMenu left-0 hidden gap-4 
+                absolute flex-col items-left justify-evenly flex-wrap leading-1 text-2xl text-400
+                md:flex md:w-4/6 md:relative md:text-white md:bg-transparent md:p-[initial] md:flex-row md:top-[initial] md:text-base">
+			<li class="comFilho flex gap-1 items-center">
+				<a href="/" class="">
+					O que você procura?
+				</a>
+				<svg
+					class="fill-primary stroke-1 w-8 stroke-primary absolute right-4 md:right-[initial] md:relative md:w-4 md:fill-white "
+					xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+					stroke-linejoin="round" class="feather feather-chevron-down">
+					<polyline points="6 9 12 15 18 9"></polyline>
+				</svg>
+				<ul
+					class="filho hidden md:absolute md:top-6 flex flex-col gap-2 bg-white md:shadow-xl text-black p-4 text-center w-[10rem] md:leading-6">
+					<li class="hover:text-primary hover:underline"><a href="">Lorem</a></li>
+					<li class="hover:text-primary hover:underline"><a href="">Lorem</a></li>
+					<li class="hover:text-primary hover:underline"><a href="">Lorem</a></li>
+					<li class="hover:text-primary hover:underline"><a href="">Lorem</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="/">Institucional</a>
+			</li>
+			<li>
+				<a href="/">Grupo Copel</a>
+			</li>
+			<li>
+				<a href="/">Investidores</a>
+			</li>
+			<li>
+				<a href="/">Notícias</a>
+			</li>
+			<li>
+				<a href="/">Atendimento</a>
+			</li>
+		</ul>
 
-    </header>
-    
-    <style>
-        .comFilho:hover > ul{ display: flex; }
-    </style>
+		<a href="/" class="flex items-center justify-center px-4 py-2 bg-white rounded text-primary">Fatura Digital</a>
 
+		<div class="search flex items-center justify-center p-2 bg-[rgba(0,0,0,.1)] rounded hover:cursor-pointer">
+			<svg class="button-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+				<path class="fill-white" id="search"
+					d="M19.862,18.316,15.12,13.574a.464.464,0,0,0-.332-.137h-.516a8.123,8.123,0,1,0-.836.836v.516a.48.48,0,0,0,.137.332l4.742,4.742a.469.469,0,0,0,.664,0l.883-.883A.469.469,0,0,0,19.862,18.316ZM8.125,14.374a6.25,6.25,0,1,1,6.25-6.25A6.248,6.248,0,0,1,8.125,14.374Z"
+					fill="#ff750c" />
+			</svg>
+
+			<div
+				class="boxSearch hidden items-center justify-center w-screen h-screen bg-[rgba(0,0,0,.8)] fixed top-0 left-0">
+				<input class="px-8 py-4 bg-transparent border-b text-[3rem] text-white text-center" type="search" name="search"
+					id="search" placeholder="Faça sua busca">
+				<div
+					class="button-search absolute right-12 text-bold text-white text-2xl rounded border w-8 h-8 flex items-center justify-center hover:bg-primary ">
+					x
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<style>
+		.comFilho:hover>ul {
+			display: flex;
+		}
+
+		@media(max-width:768px) {
+			.comFilho:hover>ul {
+				display: none;
+			}
+		}
+
+		.boxSearch.openSearch {
+			display: flex;
+		}
+
+		.menu.openMenu {
+			display: flex;
+		}
+
+		.comFilho.openNivelDois {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.comFilho.openNivelDois .filho {
+			display: block;
+		}
+
+		.rotateArrow {
+			transform: rotate(180deg);
+		}
+	</style>
+
+	<script>
+		$(".button-search").bind("click", function () {
+			$(".boxSearch").toggleClass("openSearch");
+		});
+		$(".iconMenu").bind("click", function () {
+			$(".menu").toggleClass("openMenu");
+		});
+
+		var handArrowMenuMobile = $(".menu .comFilho > svg");
+
+		handArrowMenuMobile.bind("click", function () {
+			$(this).closest(".comFilho").toggleClass("openNivelDois");
+			$(this).toggleClass("rotateArrow");
+		});
+
+	</script>
 
 </body>
+
 </html>
